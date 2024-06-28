@@ -66,7 +66,7 @@
 
 // console.log(customerType)
 
-
+// logical operators: and &&, or ||, ! not, ??
 
 
 
