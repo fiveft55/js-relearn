@@ -29,6 +29,8 @@ let course = {
 
 
 
-console.log(bigNUM)
+console.log(course)
+console.log(course.name)
+console.log(course.hours)
 
 
