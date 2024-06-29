@@ -68,10 +68,12 @@
 
 // logical operators: and &&, or ||, ! not, ??
 
+// exe: max-min num
 
-
-
-
+// function maxNum(num1, num2) {
+//     return num1 >= num2 ? num1 : num2
+// }
+// console.log(maxNum(2, 5))
 
 
 
