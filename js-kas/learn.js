@@ -68,19 +68,30 @@
 
 // logical operators: and &&, or ||, ! not, ??
 
+// for-in loop
+// const course = {
+    //     name: 'js for starters',
+    //     duration: 3,
+    //     sections: 7
+// }
+
+
+// for (const key in course)
+//     console.log(course[key])
+
+// for-of loop
+// numArray = [1,2,3,4,5]
+// for (let elem of numArray) console.log(elem)
+    
+// wordArry = 'abcde'
+// for (let elex of wordArry) console.log(elex)
+
 // exe: max-min num
 
 // function maxNum(num1, num2) {
 //     return num1 >= num2 ? num1 : num2
 // }
 // console.log(maxNum(2, 5))
-
-
-
-
-
-
-
 
 
 
