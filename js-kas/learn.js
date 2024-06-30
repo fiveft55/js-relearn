@@ -95,10 +95,36 @@
 
 // 1:31: fizbuz
 
+// Object literals: state & behaviour: function in an object,aka method
 
+// const dog = {
+//     name: 'Max',
+//     breed: 'Pug',
+//     age: 5,
+//     weight: 12,
+//     eat: function() {
+//         console.log('Chomp')
+//     },
+//     bark() {
+//         console.log('Woof')
+//     }
+// }
 
+// function getDog(name, bread, age, weight) {
+//     return {
+//         name,
+//         bread,
+//         age,
+//         weight,
+//         eat() {
+//             console.log('Chomp')
+//         },
+//         bark() {
+//             console.log('Woof')
+//         }
+//     }
+// }
 
-
-
-
+// const anotherDog = getDog('Marley', 'Chocolate lab', 3, 60)
+// console.log(anotherDog)
 
