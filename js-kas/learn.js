@@ -370,7 +370,7 @@
 // console.log(combined)
 
 // iterate an array
-const numbers = [1,2,3,4,5]
+// const numbers = [1,2,3,4,5]
 
 // for(num of numbers){
 //     console.log(num)
@@ -416,24 +416,60 @@ const numbers = [1,2,3,4,5]
 
 // console.log(employees)
 
+// array.filter()
+// const numbers = [1,2,3,4,5,6]
+// const evenNumbers = numbers.filter(num => num % 2 === 0)
+// console.log(evenNumbers)
 
+// const employees = [
+//     {id: 1, name: 'Alice', role: 'Dev'},
+//     {id: 2, name: 'Bob', role: 'Designer'},
+//     {id: 3, name: 'Charlie', role: 'Dev'},
+//     {id: 4, name: 'Dani', role: 'Manager'},
+// ]
 
+// const devS = employees.filter(emplo => emplo.role == 'Dev')
+// console.log(devS)
 
+// array.map -- mapping array
 
+// const numbers = [2,4,6,8,10]
 
+// const sqNum = numbers.map(num => num * num)
+// console.log(sqNum)
 
+// const char = ['a', 'b', 'c', 'd']
+// const upperCaseChar = char.map(char => char.toUpperCase())
+// console.log(upperCaseChar)
 
+// const employ = [
+//     {id: 1, name: 'Alice', email: 'AliCe@gmail.com'},
+//     {id: 2, name: 'Steve', email: 'sTeve@gmail.com'},
+//     {id: 3, name: 'Joe', email: 'Joe@gmail.com'},
+// ]
+// const updateEmp = employ.map( emp => ({
+//     ...emp,
+//     email: emp.email.toLowerCase()
+// }) )
 
+// console.log(updateEmp)
 
-
-
-
-
-
-
-
+// Reducing an array
+let nums = [1,2,3,4,5]
+// summation
+const sum = nums.reduce((accumulator, currentValue) => {
+    return accumulator + currentValue
+}, 0) // initial start value: 0
 
 // -- funx --
-// function println(e){
-//     console.log(e)
-// } println(numbers)
+function println(e){
+    console.log(e)
+} 
+println('The total sum is: ' + sum)
+
+// Function declaration VS expressions: 3:01
+
+
+
+
+
