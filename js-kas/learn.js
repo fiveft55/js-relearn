@@ -264,5 +264,41 @@
 
 // String Methods: 2:3:20
 
+// let sentence = 'A new sentence.'
+
+// let updatedSentence = sentence.replace('new', 'short')
+// console.log(updatedSentence)
+// trimmedSen = sentence.trim()
+// console.log(trimmedSen)
+// const wordsInSen = sentence.split(' ')
+// console.log(wordsInSen)
+
+// let email = 'TesTEmail@gmail.com'
+// let lowerCaseEmail = email.toLowerCase()
+// let upperCaseEmail = email.toUpperCase()
+// console.log(upperCaseEmail)
+
+// -- Template Literals
+
+// let firstName = 'Steve'
+// let lastName = 'Smith'
+
+// let fullname = firstName + ' ' + lastName
+// let fullname = `${firstName} ${lastName}`
+
+// console.log(fullname)
+
+// -- The date object -- 2: 11
+
+// adding elements
+const numbers = [5,4,3,2,1]
+
+numbers.push(7)
+console.log(numbers)
+
+
+
+
+
 
 
