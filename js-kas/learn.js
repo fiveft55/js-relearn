@@ -213,7 +213,6 @@
 // let b = a
 
 // a.value = 100
-// Object.assign(b,a)
 // console.log(a)
 // console.log(b)
 
@@ -291,10 +290,131 @@
 // -- The date object -- 2: 11
 
 // adding elements
-const numbers = [5,4,3,2,1]
 
-numbers.push(7)
-console.log(numbers)
+// const numbers = [5,4,3,2,1]
+// // numbers.push(7,8,9)
+// // numbers.unshift(9,8,7)
+// numbers.splice(1, 1, 25,24) // target location , delCount, addnum
+// console.log(numbers)
+
+// indexOf, lastIndexOf
+// const numbers = [5,4,3,2,1,3]
+
+// const indexOfThree = numbers.indexOf(3)
+// // console.log(indexOfThree) // number[indexOfThree] = valueStored: 3
+// const lastIndexOfThree = numbers.lastIndexOf(3)
+// console.log(lastIndexOfThree)
+
+// finding elems by ref
+// const employees = [
+//     {
+//         id: 1,
+//         name: 'Jim'
+//     },
+//     {
+//         id:2,
+//         name: 'Scott'
+//     },
+//     {
+//         id:3,
+//         name: 'Pam'
+//     }
+// ]
+
+// const employee = employees.find(function(e) {
+//     return e.name === 'Jim'
+// })
+// console.log(employee)
+
+// arrow function as predicate()
+
+// const add = (num1, num2) => {
+//     return num1 + num2
+// }
+// console.log(add(4,1))
+// const add = (num1, num2) => num1 + num2
+// console.log(add(3, 1))
+// const add = (num1, num2) => console.log(num1 + num2)
+// add(4,1)
+
+// -- Removing elements
+// const numbers = [1,2,3,4,5]
+
+// const lastElem = numbers.pop()
+// console.log(`lastElement: ${lastElem}\n`)
+
+// const firstElem = numbers.shift()
+// console.log(`firstElement: ${firstElem}`)
+
+// const middleElem = numbers.splice(1, 1)
+// console.log(`midElement: ${middleElem}`)
+
+// empting an array
+// let numbers = [1,2,3,4,5]
+
+// numbers.length = 0
+// numbers.splice(0, numbers.length)
+// numbers = []
+
+// combining and slicing arrays
+// let examA = [1,2,3]
+// let examB = [4,5,6]
+
+// const combA = examA.concat(examB)
+// console.log(combA)
+
+// const firstSlice = combA.slice(0,4)
+// console.log(firstSlice)
+
+// let combined = [...examA, ...examB] // spread operator
+// console.log(combined)
+
+// iterate an array
+const numbers = [1,2,3,4,5]
+
+// for(num of numbers){
+//     console.log(num)
+// }
+
+// numbers.forEach(num => {
+//     console.log(num)
+// });
+
+// numbers.forEach((num, index) => console.log(`At index, ${index}: ${num}`));
+
+// joining array
+// const number = [1,2,3,4,5]
+// const joinedNum = numbers.join(', ')
+// console.log(joinedNum)
+
+// const coureName = 'Js for starters'
+// const parts = coureName.toLocaleLowerCase().split(' ') // method chaining: use 2 methods
+// const urlSlug = parts.join('-')
+// console.log(urlSlug)
+
+// sorting array
+// let char = ['c', 'd','b','a']
+// // char.sort()
+// char.reverse()
+// console.log(char)
+
+// let employees = [
+//     {id: 1, name: 'Jen'},
+//     {id: 2, name: 'Steve'},
+//     {id: 3, name: 'Eve'},
+//     {id: 4, name: 'Adam'},
+// ]
+
+// employees.sort((a, b) => {
+//     const lowercaseA = a.name.toLowerCase()
+//     const lowercaseB = b.name.toLowerCase()
+
+//     if (lowercaseA < lowercaseB) return -1
+//     if (lowercaseA > lowercaseB) return 1
+//     return 0
+// })
+
+// console.log(employees)
 
 
 
@@ -302,3 +422,18 @@ console.log(numbers)
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+// -- funx --
+// function println(e){
+//     console.log(e)
+// } println(numbers)
