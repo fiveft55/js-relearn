@@ -455,21 +455,50 @@
 // console.log(updateEmp)
 
 // Reducing an array
-let nums = [1,2,3,4,5]
-// summation
-const sum = nums.reduce((accumulator, currentValue) => {
-    return accumulator + currentValue
-}, 0) // initial start value: 0
+// let nums = [1,2,3,4,5]
+// // summation
+// const sum = nums.reduce((accumulator, currentValue) => {
+//     return accumulator + currentValue
+// }, 0) // initial start value: 0
 
 // -- funx --
 function println(e){
     console.log(e)
 } 
-println('The total sum is: ' + sum)
+// println('The total sum is: ' + sum)
 
-// Function declaration VS expressions: 3:01
+// Function declaration VS expressions:
+// hoisting
+// arguments
+// function mul(n1, n2) {
+//     let product = 1
+//     for (const num of arguments)
+//         product *= num
 
+//     return product
+// }
+// println( mul(2,2,4))
 
+// rest operator: spread operator but for functions
+// demo of spread operator
+// let course = {
+//     name: 'js for starters',
+//     duration: '3 hrs'
+// }
+// let newCourse = {
+//     ...course,
+//     name: 'Js pro'
+// }
 
+// println(newCourse)
 
+// function multiply(...args) {
+//     return args.reduce((accumulator, currentValue) => accumulator * currentValue, 1)
+// }
+// function multiply(muler ,...numbers) {
+//     return numbers.map( num => num * muler)
+// }
+// println(multiply(2, 1,2,3,4))
+
+// 3 : 13
 
