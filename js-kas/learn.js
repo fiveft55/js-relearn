@@ -500,5 +500,58 @@ function println(e){
 // }
 // println(multiply(2, 1,2,3,4))
 
-// 3 : 13
+// 3 : 13 -- getter and setters
+// const course = {
+//     name: 'Js for starters',
+//     duration: '3 hrs',
+//     details() {
+//         return `${this.name} is ${this.duration}`
+//     }
+// }
+
+// const course = {
+//     name: 'Js for starters',
+//     duration: '3 hrs',
+//     get details() {
+//         return `${this.name} is ${this.duration}`
+//     },
+//     set details(value) {
+//         let parts = value.split(' is ')
+//         this.name = parts[0]
+//         this.duration = parts[1]
+//     }
+// }
+// println(`${course.name} is ${course.duration}`)
+// println(course.details())
+// println(course.details)
+
+// course.details = 'Js pro is 10 hrs'
+// println(course.details)
+
+// try and catch
+const course = {
+    name: 'Js for starters',
+    duration: '3 hrs',
+    get details() {
+        return `${this.name} is ${this.duration}`
+    },
+    set details(value) {
+        if (typeof value !== 'string'){
+            throw new Error(`Value, ${value} is not a string.`)
+        }
+
+        let parts = value.split(' is ')
+        this.name = parts[0]
+        this.duration = parts[1]
+    }
+}
+
+try {
+    course.details = 42
+} catch(e) {
+    console.log(`Caught an error: ${e.message}`)
+}
+
+
+
 
